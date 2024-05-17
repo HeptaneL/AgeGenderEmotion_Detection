@@ -35,9 +35,9 @@ age_ranges = ['1-2', '3-9', '10-20', '21-27', '28-45', '46-65', '66-116']
 gender_ranges = ['male', 'female']
 emotion_ranges= ['positive','negative','neutral']
 img_path = "./images/family.jpg"
-from IPython.display import Image
-pil_img = Image(filename=img_path)
-display(pil_img)
+#from IPython.display import Image
+#pil_img = Image(filename=img_path)
+#display(pil_img)
 test_image = cv2.imread(img_path)
 gray = cv2.cvtColor(test_image,cv2.COLOR_BGR2GRAY)
 face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
